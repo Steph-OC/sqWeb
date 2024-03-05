@@ -1,0 +1,259 @@
+.maintenance-site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 40px;
+
+
+    .container-title-maintenance {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        background-image: linear-gradient(135deg, #79F1A4 10%, #0E5CAD 100%);
+        position: relative;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+
+        & h2 {
+            color: $blancCasse;
+            font-size: 44px;
+        }
+
+        .icone-maintenance {
+            font-weight: 900;
+            font-size: 75px;
+            margin-right: 20px;
+            color: $blancCasse;
+        }
+
+        .img-maintenance {
+            width: 250px;
+            margin-bottom: 36px;
+        }
+    }
+
+    .container-text-maintenance {
+        display: flex;
+        width: 100%;
+        gap: 100px;
+        justify-content: center;
+
+        .text-maintenance {
+            line-height: 1.8;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            width: 70%;
+            padding: 60px 0px 50px 0px;
+        }
+
+    }
+
+    .card-maint {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        border: 2px solid $sarcelle;
+        border-radius: 15px;
+        background-color: $blancCasse;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+
+        .container-titre-maint {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: $sarcelle;
+            border-radius: 15px 15px 0px 0px;
+            padding: 20px;
+
+            h3 {
+                font-size: 30px;
+                color: $blancCasse;
+            }
+        }
+
+        .text-card-maint {
+            ul {
+                list-style-type: none;
+                margin: 20px 10px 20px 10px;
+                line-height: 45px;
+
+                .text-li {
+                    color: $blackText;
+                    font-weight: 800;
+                }
+
+                .icone-maint {
+                    color: $orange;
+                    margin-right: 10px;
+                }
+            }
+
+            .text-tarif {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+
+                p {
+                    font-size: 17px;
+                    border: 2px solid $orange;
+                    border-radius: 20%;
+                    padding: 10px;
+                }
+
+                .contact {
+                    display: flex;
+                    flex-direction: row;
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    .custom-shape-divider-top-1708940904 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .custom-shape-divider-top-1708940904 svg {
+        position: relative;
+        display: block;
+        width: calc(157% + 1.3px);
+        height: 68px;
+    }
+
+    .custom-shape-divider-top-1708940904 .shape-fill {
+        fill: #FFFFFF;
+    }
+
+    /** For tablet devices **/
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .custom-shape-divider-top-1708940904 svg {
+            width: calc(165% + 1.3px);
+            height: 68px;
+        }
+    }
+
+    /** For mobile devices **/
+    @media (max-width: 767px) {
+        .custom-shape-divider-top-1708940904 svg {
+            width: calc(177% + 1.3px);
+            height: 43px;
+        }
+    }
+
+    .custom-shape-divider-bottom-1708940949 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1708940949 svg {
+        position: relative;
+        display: block;
+        width: calc(157% + 1.3px);
+        height: 68px;
+    }
+
+    .custom-shape-divider-bottom-1708940949 .shape-fill {
+        fill: #FFFFFF;
+    }
+
+    /** For tablet devices **/
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .custom-shape-divider-bottom-1708940949 svg {
+            width: calc(165% + 1.3px);
+            height: 68px;
+        }
+    }
+
+    /** For mobile devices **/
+    @media (max-width: 767px) {
+        .custom-shape-divider-bottom-1708940949 svg {
+            width: calc(177% + 1.3px);
+            height: 43px;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .maintenance-site .container-title-maintenance {
+        padding: 50px 0px 50px 0px;
+        flex-direction: column-reverse;
+    }
+
+    .maintenance-site .container-title-maintenance h2 {
+        font-size: 2em;
+        text-align: center;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .maintenance-site .container-title-maintenance .icone-maintenance {
+        font-size: 1.5em;
+    }
+
+    .maintenance-site .container-title-maintenance .img-maintenance {
+        width: 15em;
+        margin-bottom: 3px;
+    }
+
+    .maintenance-site .card-maint {
+        width: 70%;
+    }
+
+    .maintenance-site .container-text-maintenance .text-maintenance {
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .maintenance-site .container-title-maintenance h2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 50px 15px 50px;
+    }
+
+    .maintenance-site .container-title-maintenance .icone-maintenance {
+        font-size: 1.5em;
+        margin-right: 0px;
+    }
+
+    .maintenance-site .container-title-maintenance .img-maintenance {
+        width: 13em;
+    }
+
+    .maintenance-site .container-text-maintenance .text-maintenance {
+        width: 70%;
+        margin-top: 0px;
+    }
+
+    .maintenance-site .card-maint {
+        width: 85%;
+    }
+
+    .maintenance-site .card-maint .container-titre-maint h3 {
+        text-align: center;
+        margin: 0px;
+    }
+
+    .maintenance-site .card-maint .text-card-maint ul {
+        padding-left: 10px;
+    }
+
+}

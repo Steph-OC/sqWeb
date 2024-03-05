@@ -1,0 +1,82 @@
+.page-conf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .section-conf {
+        width: 100%;
+
+
+        .cont-titre {
+            width: 100%;
+            background-color: $blancCasse;
+            padding: 50px 0px 50px 0px;
+            position: relative;
+
+            h2 {
+                color: $blackText;
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+
+        h3 {
+            color: $blackText;
+            font-size: 30px;
+            margin: 0px;
+        }
+    }
+
+    .text-conf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        margin: 100px;
+    }
+}
+
+
+.custom-shape-divider-top-1709030902 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1709030902 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 59px;
+}
+
+.custom-shape-divider-top-1709030902 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1709030940 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709030940 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 59px;
+}
+
+.custom-shape-divider-bottom-1709030940 .shape-fill {
+    fill: #FFFFFF;
+}

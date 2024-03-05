@@ -1,0 +1,107 @@
+.site_footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    position: relative;
+
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        background: #fc4a1a;
+        background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+        background: linear-gradient(to right, #f7b733, #fc4a1a);
+        padding-top: 100px;
+        justify-content: flex-end;
+
+        .cont-menu-reseaux {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            justify-content: space-evenly;
+            align-items: flex-start;
+
+            .container-sociaux,
+            .site_footer_menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                list-style: none;
+                line-height: 1.8;
+
+                a {
+                    text-decoration: none;
+                    color: $blackText;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                a:hover {
+                    color: $blancCasse;
+                    transform: translateX(0px) scale(1);
+                }
+            }
+
+            .container-sociaux {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 25%;
+                line-height: 1.8;
+
+            }
+        }
+    }
+
+    .custom-shape-divider-top-1707424932 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+
+    .custom-shape-divider-top-1707424932 svg {
+        position: relative;
+        display: block;
+        width: calc(178% + 1.3px);
+        height: 46px;
+    }
+
+    .custom-shape-divider-top-1707424932 .shape-fill {
+        fill: #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 1044px) {
+    .container_logo {
+        visibility: hidden;
+        width: 0px;
+    }
+
+    .site_footer .container-footer .cont-menu-reseaux {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .site_footer .container-footer .cont-menu-reseaux .container-sociaux,
+    .site_footer .container-footer .cont-menu-reseaux .site_footer_menu {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .site_footer .container-footer .cont-menu-reseaux .container-sociaux {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        line-height: 1.8;
+    }
+}

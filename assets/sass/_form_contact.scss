@@ -1,0 +1,186 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 50px 0px 50px 0px;
+
+    .form_title {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        color: $sarcelle;
+        font-size: 2em;
+
+        .titre_contact {
+            font-size: 2em;
+            color: $blackText;
+            margin-bottom: 50px;
+        }
+
+        .contact-img {
+            width: 150px;
+        }
+    }
+
+    #wpcf7-f5-o1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid $orange;
+        border-radius: 15px;
+        box-shadow: 4px 3px 10px 0px rgba(0, 0, 0, 0.3);
+        background-color: $blancCasse;
+
+        .wpcf7-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            gap: 40px;
+            padding: 40px 0px 40px 0px;
+
+            .form_label,
+            .form_label_case {
+                color: $orange;
+                font-weight: 600;
+            }
+
+            .form_text {
+                border: 2px solid $sarcelle;
+                border-radius: 5px;
+                width: 400px;
+                height: 40px;
+            }
+
+            .form_textarea {
+                border: 2px solid $sarcelle;
+                border-radius: 5px;
+                width: 500px;
+            }
+
+            .form_label_case {
+                display: flex;
+                align-items: center;
+
+                .wpcf7-form-control-wrap {
+                    display: flex;
+                    align-items: center;
+
+                    .wpcf7-list-item {
+                        display: flex;
+                        align-items: center;
+
+                        input[type="checkbox"] {
+                            position: relative;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            margin-right: 10px; // Espace entre la case et le label
+                            border: 2px solid $sarcelle;
+                            border-radius: 5px;
+                            width: 20px;
+                            height: 20px;
+                            background-color: #fff;
+                            cursor: pointer;
+
+                            &:checked {
+                                background-color: #fff;
+                                position: relative;
+                            }
+
+                            &:checked:after {
+                                content: '✔';
+                                position: absolute;
+                                left: 50%;
+                                top: calc(50% - 3px);
+                                transform: translate(-50%, -50%);
+                                font-size: 16px;
+                                color: $orange;
+                                width: 100%;
+                                height: 100%;
+                                line-height: 20px; // Centre le symbole verticalement
+                                text-align: center; // Centre le symbole horizontalement
+                            }
+                        }
+
+                        .wpcf7-list-item-label {
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+
+            .form_rgpd {
+                margin: 0px 30px 0px 30px;
+                color: $orange;
+                font-weight: 600;
+            }
+
+            .form_btn {
+                color: $blancCasse;
+                width: 150px;
+                height: 40px;
+                border-radius: 5px;
+                box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, .2);
+                background: rgb(237, 59, 45);
+                background: linear-gradient(205deg, rgba(237, 59, 45, 1) 1%, rgba(239, 136, 58, 1) 27%, rgba(239, 136, 58, 1) 43%, rgba(229, 218, 203, 1) 100%);
+
+                &:hover {
+                    background-color: #ffff;
+                    color: #508283;
+                    font-weight: 800;
+                    transform: scale(1.05);
+                }
+
+                &:active {
+                    transform: scale(0.95);
+                    box-shadow: inset 0;
+                }
+            }
+
+            .wpcf7-spinner {
+                visibility: hidden;
+                display: inline-block;
+                background-color: $orange;
+                opacity: 0.75;
+                width: 24px;
+                height: 24px;
+                border: none;
+                border-radius: 100%;
+                padding: 0;
+                margin: 0 24px;
+                position: relative;
+            }
+
+            #wpcf7-f16-o1 .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+                display: block;
+                /* Afficher le message d'erreur en tant que bloc */
+                margin-top: 10px;
+                /* Ajouter un espace au-dessus du message d'erreur */
+                clear: both;
+                /* S'assurer que le message d'erreur apparaît sur une nouvelle ligne */
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact #wpcf7-f5-o1 .wpcf7-form {
+        max-width: 90vw;
+
+    }
+
+    .contact #wpcf7-f5-o1 .wpcf7-form .form_text {
+        width: 80vw;
+
+    }
+
+    .contact #wpcf7-f5-o1 .wpcf7-form .form_textarea {
+        width: 80vw;
+    }
+}

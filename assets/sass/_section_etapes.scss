@@ -1,0 +1,247 @@
+#conception {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 50px;
+
+    .text-gr {
+        color: $sarcelle;
+    }
+
+    .titre_etapes {
+        margin: 70px 0 70px 0;
+        color: $sarcelle;
+        font-size: 2em;
+        text-align: center;
+        margin: 0px 0 80px 0;
+    }
+
+    .titre-étape {
+        font-size: 1.5em;
+        font-weight: 800;
+        color: $orange;
+        text-align: center;
+        margin: 0;
+    }
+
+    .text-etape {
+        color: $sarcelle;
+        word-spacing: 5px;
+        line-height: 1.5;
+        font-weight: 800;
+        font-size: 17px;
+    }
+
+    .container-1,
+    .container-2,
+    .container-3 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px 20px 0px;
+        position: relative;
+
+        .etape-1,
+        .etape-2,
+        .etape-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: $blancCasse;
+            width: 400px;
+            height: 400px;
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: 3px 3px 5px 0px #0000004d;
+            position: absolute;
+
+            .text-etape {
+                text-align: center;
+            }
+        }
+
+        .container-img1,
+        .container-img2,
+        .container-img3 {
+            width: 400px;
+            height: 400px;
+            text-align: center;
+            border-radius: 15px;
+            background-color: $sarcelle;
+            border-radius: 15px;
+            box-shadow: 3px 3px 5px 0px #0000004d;
+            position: relative;
+            padding: 10px;
+
+            #idea,
+            #dev,
+            #livraison {
+                height: 100%;
+                width: 100%;
+                display: block;
+                box-shadow: 3px 3px 5px 0px #0000004d;
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $blancCasse;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.5;
+
+            }
+
+            .overlay.hidden {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+.btn-cta-concept{
+    display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.btn-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: absolute;
+    bottom: 15px;
+    /* Ajustez selon l'espace souhaité depuis le bas de la carte */
+    right: 10px;
+    /* Ajustez selon l'espace souhaité depuis la droite de la carte */
+}
+
+
+/* CSS existant pour les animations */
+@keyframes moveLeft {
+    to {
+        transform: translateX(-215px);
+        /* Ajustez selon l'espace souhaité */
+    }
+}
+
+@keyframes moveRight {
+    to {
+        transform: translateX(215px);
+        /* Ajustez selon l'espace souhaité */
+    }
+}
+
+/* Nouvelles classes pour déclencher les animations */
+.animate-moveLeft {
+    animation: moveLeft 1.5s forwards;
+}
+
+.animate-moveRight {
+    animation: moveRight 1.5s forwards;
+}
+
+@keyframes moveUp {
+    to {
+        transform: translateY(-227px) translateX(165px) scale(0.3);
+        /* Ajustez la valeur selon le besoin */
+    }
+}
+
+@keyframes moveDown {
+    to {
+        transform: translateY(0px);
+        /* Ajustez la valeur selon le besoin */
+    }
+}
+
+/* Utilisez ces classes pour déclencher les animations */
+.animate-moveUp {
+    animation: moveUp 1s forwards;
+}
+
+.animate-moveDown {
+    animation: moveDown 1s forwards;
+}
+
+@media screen and (max-width: 518px) {
+
+    #conception .container-1,
+    #conception .container-2,
+    #conception .container-3 {
+        margin: 20px 0px 30px 0px;
+
+    }
+
+    @keyframes moveUp {
+        to {
+            transform: translateY(-237px) translateX(10px) scale(0.3);
+            /* Ajustez la valeur selon le besoin */
+        }
+    }
+
+    @keyframes moveDown {
+        to {
+            transform: translateY(0px);
+            /* Ajustez la valeur selon le besoin */
+        }
+    }
+}
+
+@media screen and (max-width: 518px) {
+
+    #conception .titre_etapes {
+
+        margin: 80px 0 114px 0;
+    }
+
+    #conception .container-1 .etape-1 .text-etape,
+    #conception .container-1 .etape-2 .text-etape,
+    #conception .container-1 .etape-3 .text-etape,
+    #conception .container-2 .etape-1 .text-etape,
+    #conception .container-2 .etape-2 .text-etape,
+    #conception .container-2 .etape-3 .text-etape,
+    #conception .container-3 .etape-1 .text-etape,
+    #conception .container-3 .etape-2 .text-etape,
+    #conception .container-3 .etape-3 .text-etape {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #conception .container-1,
+    #conception .container-2,
+    #conception .container-3 {
+        margin: 40px 0px 50px 0px;
+
+        .etape-1,
+        .etape-2,
+        .etape-3 {
+            width: 300px;
+            height: 380px;
+
+        }
+
+        .container-img1,
+        .container-img2,
+        .container-img3 {
+            width: 300px;
+            height: 380px;
+
+        }
+
+        @keyframes moveUp {
+            to {
+                transform: translateY(-240px) translateX(10px) scale(0.4);
+                /* Ajustez la valeur selon le besoin */
+            }
+        }
+
+    }
+}
